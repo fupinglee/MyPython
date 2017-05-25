@@ -75,7 +75,7 @@ def getDelFilePath():
             charset='utf8'
             ) 
     cur = conn.cursor() 
-    sql1 = "select count(*),md5,server_filename from `test`.`mypan` where size > 1024*1024*500 group by md5 HAVING COUNT(md5) >0 order by path"
+    sql1 = "select count(*),md5,server_filename from `test`.`mypan` where size > 1024*1024*500 group by md5 HAVING COUNT(md5) >1 order by path"
     r1 = cur.execute(sql1)
     info = cur.fetchmany(r1)
     for ii in info:
@@ -93,7 +93,7 @@ def getDelFilePath():
     conn.commit()
     conn.close()
     return pathlist
-def getFileList(filelist):
+def getFileList(pathlist):
     result = '["'
     for path in pathlist:
         
