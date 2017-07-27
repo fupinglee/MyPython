@@ -9,9 +9,9 @@
 ### baidu
 主要放一些baidu的相关脚本。
 
-| 名称 | 作用 |备注|
+| 名称 | 作用 |备注|<br>
 |--------|--------|
-|    BDPandel.py    |   百度网盘重复大文件删除     |参考[博客](http://fuping.site/2017/05/24/Clean-Duplicate-Files-OF-BaiDu-YunPan/)
+|    BDPandel.py    |   百度网盘重复大文件删除     |参考[博客](http://fuping.site/2017/05/24/Clean-Duplicate-Files-OF-BaiDu-YunPan/)<br>
 |    tbsign.py    |   百度贴吧自动签到     |
 
 - - -
@@ -20,7 +20,7 @@
 
 算号器。
 
-| 名称 | 作用 |备注|
+| 名称 | 作用 |备注|<br>
 |--------|--------|
 |    Wing IDE *.py    |   Wing IDE算号     |参考[博客](http://blog.csdn.net/liumaolincycle/article/details/47756351)
 
