@@ -1,4 +1,6 @@
 # 百度相关脚本
+
+***
 ### BDPandel.py
 该脚本是为了删除百度云盘重复的大文件。
 思路是：
@@ -22,3 +24,9 @@
 python BDPandel.py -m 1 //将文件信息入库
 python BDPandel.py -m 2 //找出重复的大文件并删除
 ```
+---
+### tbsign.py
+
+百度贴吧自动签到程序，将BDUSS替换为自己的BDUSS，直接运行即可。
+
+---
