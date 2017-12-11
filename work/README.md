@@ -40,7 +40,7 @@ mongo 127.0.0.1:65521/mydb
 db.createUser({user:'tass',pwd:'liehu',roles:[{role:'dbOwner',db:'mydb'}]}) #添加认证
 ```
 
-    3.修改代码中数据库配置
+  3.修改代码中数据库配置
 ```python
 def addData(data):
     DBNAME = 'mydb'
