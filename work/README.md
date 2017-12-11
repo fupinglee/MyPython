@@ -3,7 +3,7 @@
 
 ***
 ### CVE-Monitor.py
-该脚本是根据https://cassandra.cerias.purdue.edu/CVE_changes/today.html监控最新CVE信息。然后入库并发送结果到邮件。
+该脚本是根据https://cassandra.cerias.purdue.edu/CVE_changes/today.html 监控最新CVE信息。然后入库并发送结果到邮件。
 主要包括以下几个方面。
 1. 获取最新的CVE列表和详情
 主要采用了python的requests模块和BeautifulSoup模块。
@@ -31,6 +31,7 @@ beautifulsoup4==4.6.0
     
     1.数据库安装
 	Ubuntu下可以使用`apt-get install mongodb`。CentOS下的安装可以参考[CentOS 安装MongoDB](http://blog.csdn.net/yima1006/article/details/9840239)
+    
     2.创建数据库存储文件位置
 ```bash
 mkdir /var/data/ #创建数据存储位置
@@ -50,7 +51,8 @@ def addData(data):
 3. 修改邮箱信息为自己的
 
 ```python
-	sender = 'from@163.com' # 发件人
+def sendEmail(mail_msg):  # 发送邮件
+    sender = 'from@163.com' # 发件人
     password = 'password' # 发件人密码
     receiver = 'receiver@163.com' # 收件人
 ```
