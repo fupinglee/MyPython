@@ -39,6 +39,7 @@ mongod --port 65521 --dbpath /var/data/ --bind_ip 127.0.0.1 #启动mongodb，指
 mongo 127.0.0.1:65521/mydb 
 db.createUser({user:'tass',pwd:'liehu',roles:[{role:'dbOwner',db:'mydb'}]}) #添加认证
 ```
+
     3.修改代码中数据库配置
 ```python
 def addData(data):
